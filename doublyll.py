@@ -18,6 +18,10 @@ class LinkedList:
 
 			new_node.prev = last_node
 			last_node.next = new_node
+		# if head is None, set new head
+		if self.head == None:
+			self.head = new_node
+
 
 	def display(self):
 		# print data in order
@@ -28,13 +32,11 @@ class LinkedList:
 			print(temp_node.data, end='')
 			temp_node = temp_node.next
 		print()
-
 		# print in reverse order
 		print('Reverse order: ', end='')
 
 		# move to last node
 		last_node = self.head
-		last_node
 		while last_node.next != None:
 			last_node = last_node.next
 
@@ -57,6 +59,4 @@ if __name__ == '__main__':
 	linked_list.insert(Node(7))
 	linked_list.insert(Node(8))
 	
-	linked_list.head
 	linked_list.display()
-
