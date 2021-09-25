@@ -9,7 +9,7 @@ class Solution:
 		l1.next = self.mergeTwoLists(l1.next, l2)
 
 		return l1
-
+		
 
 		# if not l1 or not l2:
 		# 	return l1 if l1 else l2
